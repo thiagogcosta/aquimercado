@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">aquiMercado.com</string>
+
+    <string name="google_app_id">197553351993</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_afechamento">Confirmar Pedido</string>
+    <string name="title_activity_cadastro_completo_navigation">Informações Adicionais</string>
+
+    <!-- ********* INTRODUÇÃO ********** -->
+    <string name="next">Próximo</string>
+    <string name="skip">Pular</string>
+    <string name="start">Vamos lá</string>
+
+    <string name="slide_1_title">Cadastre-se</string>
+    <string name="slide_1_desc">Não perca tempo. Com o cadastro completo você poderá realizar seus pedidos.</string>
+
+    <string name="slide_2_title">Escolha o mercado</string>
+    <string name="slide_2_desc">Os estabelecimentos estão ordenados por proximadade. Pesquise e compre!</string>
+
+    <string name="slide_3_title">Escolha o combo</string>
+    <string name="slide_3_desc">Fique atento a data de validade do combo para não perder uma boa oportunidade de compra.</string>
+
+    <string name="slide_4_title">Escolha os produtos</string>
+    <string name="slide_4_desc">Pesquise sobre as possibilidades de combinação dos produtos e seus descontos!</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/menu_home" android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item android:id="@+id/menu_conectar" android:icon="@drawable/ic_arrow_right_bold"
+            android:title="Conectar/Desconectar" />
+        <item android:id="@+id/menu_registrar" android:icon="@drawable/ic_account_plus"
+            android:title="Criar conta" />
+        <item android:id="@+id/menu_alterar" android:icon="@drawable/ic_wrench"
+            android:title="Alterar" />
+        <item android:id="@+id/menu_pedidos" android:icon="@drawable/ic_playlist_check"
+            android:title="Meus Pedidos" />
+    </group>
+
+    <!-- ic_menu_forward, ic_menu_invite, ic_menu_back -->
+
+    <item android:title="Sobre o Aplicativo">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/menu_contato" android:icon="@drawable/ic_email"
+                    android:title="Fale conosco" />
+                <item android:id="@+id/menu_indicar" android:icon="@drawable/contato"
+                    android:title="Indicar amigo" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aquimercado.aquimercado.mercado.MercadoItemNavigation">
+
+
+    <item
+        android:id="@+id/menumsg"
+        android:icon="@drawable/notification"
+        android:title="msg"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/btmais"
+        android:icon="@drawable/smartphone2"
+        android:title="Mais"
+        app:showAsAction="always">
+
+        <menu>
+
+
+
+                <item
+                    android:id="@+id/menunotificacoes"
+                    android:icon="@drawable/notificationclear"
+                    android:title="Notificações"
+                    app:showAsAction="never|withText"/>
+
+                <item
+                    android:id="@+id/menuranking"
+                    android:icon="@drawable/ranking"
+                    android:title="Ranking"
+                    app:showAsAction="never|withText"/>
+            <item
+                android:id="@+id/menupremios"
+                android:title="Prêmios"
+                android:icon="@drawable/premio"
+                app:showAsAction="never|withText"/>
+
+            <item
+                    android:id="@+id/menusobre"
+                    android:title="Sobre"
+                android:icon="@drawable/sobre"
+                    app:showAsAction="never|withText"/>
+
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_alignParentBottom="true"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/ColorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+
+            <ImageButton
+                android:id="@+id/boferta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:background="@color/ColorWhite"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:src="@drawable/ofertaact2"
+                android:paddingRight="50dp"
+                />
+
+
+
+            <ImageButton
+                android:id="@+id/bcombo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ColorWhite"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:src="@drawable/combo"
+                android:paddingRight="50dp"
+                />
+
+
+
+            <ImageButton
+                android:id="@+id/bdepto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/departamento"
+                android:background="@color/ColorWhite"
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+        </LinearLayout>
+
+</RelativeLayout>

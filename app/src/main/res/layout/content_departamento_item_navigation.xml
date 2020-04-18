@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingTop="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_departamento_item_navigation"
+    tools:context="com.aquimercado.aquimercado.departamento.DepartamentoItemNavigation">
+    <include layout="@layout/header_loja" />
+
+    <LinearLayout
+
+
+        android:paddingTop="70dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/lnbebidas"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#569">
+
+
+                    <TextView
+                        android:id="@+id/txbedidas"
+                        android:layout_width="0dp"
+                        android:text="  Bebidas"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:id="@+id/arrowbebida"
+                        android:src="@drawable/arrow32">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_bebidas"
+                android:scrollbars="vertical"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                    android:visibility="gone"
+                android:layout_height="200dp"/>
+
+
+
+                <LinearLayout
+                    android:id="@+id/lnlimpeza"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#569">
+
+
+                    <TextView
+                        android:id="@+id/txlimpeza"
+                        android:layout_width="0dp"
+                        android:text="  Limpeza"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:id="@+id/arrowlimpeza"
+                        android:src="@drawable/arrow32">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_limpeza"
+                android:layout_width="wrap_content"
+                android:scrollbars="vertical"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:layout_height="200dp"/>
+
+                <LinearLayout
+                    android:id="@+id/lncarnes"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#569">
+
+
+                    <TextView
+                        android:id="@+id/txcarnes"
+                        android:layout_width="0dp"
+                        android:text="  Carnes"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:visibility="gone"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:id="@+id/arrowcarne"
+                        android:src="@drawable/arrow32">
+
+                    </ImageView>
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_carnes"
+                    android:layout_width="wrap_content"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"/>
+
+                <LinearLayout
+                    android:id="@+id/lnbebes"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#569">
+
+
+                    <TextView
+                        android:id="@+id/txbebes"
+                        android:layout_width="0dp"
+                        android:text="  Bebês"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:id="@+id/arrowbebes"
+                        android:src="@drawable/arrow32">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_bebes"
+                    android:layout_width="wrap_content"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/lnalimentos"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#569">
+
+
+                    <TextView
+                        android:id="@+id/txalimentos"
+                        android:layout_width="0dp"
+                        android:text="  Alimentos"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:id="@+id/arrowalimentos"
+                        android:src="@drawable/arrow32">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_alimentos"
+                    android:layout_width="wrap_content"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/lnperfumaria"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#569">
+
+
+                    <TextView
+                        android:id="@+id/txperfumaria"
+                        android:layout_width="0dp"
+                        android:text="  Perfumaria"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:id="@+id/arrowperfumaria"
+                        android:src="@drawable/arrow32">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_perfumaria"
+                    android:layout_width="wrap_content"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/lnfeira"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#569">
+
+
+                    <TextView
+                        android:id="@+id/txfeira"
+                        android:layout_width="0dp"
+                        android:text="  Feira"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:id="@+id/arrowfeira"
+                        android:src="@drawable/arrow32">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_feira"
+                    android:layout_width="wrap_content"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"/>
+
+                <LinearLayout
+                    android:id="@+id/lnmassas"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#569">
+
+
+                    <TextView
+                        android:id="@+id/txmassas"
+                        android:layout_width="0dp"
+                        android:text="  Massas, Queijos e Frios"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:id="@+id/arrowmassas"
+                        android:src="@drawable/arrow32">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_massas"
+                    android:layout_width="wrap_content"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"/>
+
+                <LinearLayout
+                    android:id="@+id/lnbiscoitos"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#569">
+
+
+                    <TextView
+                        android:id="@+id/txbiscoitos"
+                        android:layout_width="0dp"
+                        android:text="  Biscoitos, doces e matinais"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:id="@+id/arrowbiscoitos"
+                        android:src="@drawable/arrow32">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_biscoitos"
+                    android:layout_width="wrap_content"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/lnpet"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#569">
+
+
+                    <TextView
+                        android:id="@+id/txpet"
+                        android:layout_width="0dp"
+                        android:text="  Pet Shop"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:id="@+id/arrowpet"
+                        android:src="@drawable/arrow32">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_pet"
+                    android:layout_width="wrap_content"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"/>
+
+                <LinearLayout
+                    android:id="@+id/lnmolhos"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#569">
+
+
+                    <TextView
+                        android:id="@+id/txmolhos"
+                        android:layout_width="0dp"
+                        android:text="  Molhos e Condimentos"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:id="@+id/arrowmolhos"
+                        android:src="@drawable/arrow32">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_molhos"
+                    android:layout_width="wrap_content"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"/>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lnnaturais"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#569">
+
+
+                    <TextView
+                        android:id="@+id/txnaturais"
+                        android:layout_width="0dp"
+                        android:text="  Naturais e Funcionais"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:visibility="gone"
+                        android:id="@+id/arrownaturais"
+                        android:src="@drawable/arrow32">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_naturais"
+                    android:layout_width="wrap_content"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"/>
+
+                <TextView
+                    android:id="@+id/txblank"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/footer_produtoitem" />
+    </RelativeLayout>
+

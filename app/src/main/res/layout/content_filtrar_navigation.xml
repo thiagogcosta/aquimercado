@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_filtrar_navigation"
+    tools:context="com.aquimercado.aquimercado.pedidos.FiltrarNavigation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/ColorFontSPLAShCERTO"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Seus Pedidos"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:background="@color/ColorFontSPLAShCERTO"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" >
+        </View>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/ColorFontSPLAShCERTO"
+                android:layout_gravity="center"
+                android:text="Tipos de Pedido"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TextView>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_marginTop="30dp"
+            android:id="@+id/radio_Pedido"
+            android:layout_gravity="left"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"-->
+
+            <RadioButton
+
+                android:id="@+id/pedido_processamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Processamento/Pronto" />
+
+            <RadioButton
+
+                android:id="@+id/pedido_finalizado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finalizado" />
+
+            <RadioButton
+
+                android:id="@+id/pedido_cancelado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelado" />
+            <!--/LinearLayout-->
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <Button
+        android:background="@color/ColorFontSPLAShCERTO"
+        android:textColor="@color/ColorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrar"
+        android:id="@+id/btFiltrarEsp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

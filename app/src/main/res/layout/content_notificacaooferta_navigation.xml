@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:isScrollContainer="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_notificacaooferta_navigation"
+    tools:context="com.aquimercado.aquimercado.config_oferta.NotificacaoOfertaNavigation">
+    <requestFocus />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:hint="Ative as Notificações "
+                android:inputType="text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <TextView
+                android:hint="ganhe 10 pontos por dia"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp">
+            </View>
+            <TextView
+                android:hint=" Bebidas"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFF"
+                android:textSize="16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+            <Switch
+                android:layout_gravity="left"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:switchMinWidth="56dp"
+                android:id="@+id/swbebidas" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp">
+            </View>
+
+            <TextView
+                android:hint=" Limpeza"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#DBE6F7"
+                android:textSize="16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+            <Switch
+                android:layout_gravity="left"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:switchMinWidth="56dp"
+                android:id="@+id/swlimpeza" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp">
+            </View>
+            <TextView
+                android:hint=" Carnes"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFF"
+                android:textSize="16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+            <Switch
+                android:layout_gravity="left"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:switchMinWidth="56dp"
+                android:id="@+id/swcarnes" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp">
+            </View>
+            <TextView
+                android:hint=" Bebês"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#DBE6F7"
+                android:textSize="16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+            <Switch
+                android:layout_gravity="left"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:switchMinWidth="56dp"
+                android:id="@+id/swbebes" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp">
+            </View>
+
+            <TextView
+                android:hint=" Alimentos"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFF"
+                android:textSize="16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+            <Switch
+                android:layout_gravity="left"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:switchMinWidth="56dp"
+                android:id="@+id/swalimentos" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp">
+            </View>
+            <TextView
+                android:hint=" Perfumaria"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#DBE6F7"
+                android:textSize="16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+            <Switch
+
+                android:layout_gravity="left"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:switchMinWidth="56dp"
+                android:id="@+id/swperfumaria" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp">
+            </View>
+            <TextView
+                android:hint=" Feira"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFF"
+                android:textSize="16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+            <Switch
+                android:layout_gravity="left"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:switchMinWidth="56dp"
+                android:id="@+id/swfeira" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp">
+            </View>
+            <TextView
+                android:hint=" Massas, Queijos e Frios"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#DBE6F7"
+                android:textSize="16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+            <Switch
+                android:layout_gravity="left"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:switchMinWidth="56dp"
+                android:id="@+id/swmassas" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp">
+            </View>
+            <TextView
+                android:hint=" Biscoitos, doces e matinais"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFF"
+                android:textSize="16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+            <Switch
+                android:layout_gravity="left"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:switchMinWidth="56dp"
+                android:id="@+id/swbiscoitos" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp">
+            </View>
+            <TextView
+                android:hint=" Pet Shop"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#DBE6F7"
+                android:textSize="16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+            <Switch
+                android:layout_gravity="left"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:switchMinWidth="56dp"
+                android:id="@+id/swpet" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp">
+            </View>
+
+            <TextView
+                android:hint=" Molhos e Condimentos"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFF"
+                android:textSize="16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+            <Switch
+                android:layout_gravity="left"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:switchMinWidth="56dp"
+                android:id="@+id/swmolhos" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp">
+            </View>
+
+            <TextView
+                android:hint=" Naturais e Funcionais"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#DBE6F7"
+                android:textSize="16sp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+            <Switch
+                android:layout_gravity="left"
+                android:layout_marginRight="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:switchMinWidth="56dp"
+                android:id="@+id/swnaturais" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="55dp">
+            </View>
+        </LinearLayout>
+
+
+
+
+
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="10dp"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_afechamento"
+    tools:context="com.aquimercado.aquimercado.fechamento.AFechamento"
+    android:orientation="vertical">
+
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/framePag"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_popup">
+
+                <RadioGroup
+                    android:layout_weight="1"
+                    android:id="@+id/radioPag"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!--LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"-->
+
+                        <RadioButton
+                            android:id="@+id/radioRet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Retirar" />
+
+                        <RadioButton
+                            android:id="@+id/radioEntreg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Entregar" />
+                    <!--/LinearLayout-->
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/text_frete"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical" />
+
+                <TextView
+                    android:id="@+id/text_freteVALOR"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical" />
+            </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameMPag"
+        android:layout_below="@+id/framePag"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/radioMPag"
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioDinheiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dinheiro" />
+
+            <RadioButton
+                android:id="@+id/radioCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cartão" />
+
+
+            <RadioButton
+                android:id="@+id/radioCheque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheque" />
+        </RadioGroup>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@drawable/custom_popup"
+        android:layout_below="@+id/frameMPag"
+        android:color="@color/ColorWhite"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/recycler_fechamento"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp" />
+
+    <!-- Footer aligned to bottom -->
+    <include layout="@layout/footer_fechamento" />
+
+</RelativeLayout>

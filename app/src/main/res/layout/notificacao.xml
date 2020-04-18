@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="103dp"
+        android:layout_height="106dp"
+        android:background="@drawable/icone"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:layout_width="258dp"
+        android:layout_height="51dp"
+        android:background="@drawable/logofim"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seu pedido está pronto!"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:text="Clique aqui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/abrirAQM"
+        android:background="@color/ColorBack"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nome_mercado"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cod_pedido"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/hora_pedido"
+        android:gravity="center_horizontal" />
+
+
+
+
+</LinearLayout>

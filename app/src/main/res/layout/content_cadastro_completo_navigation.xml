@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:isScrollContainer="false"
+    android:background="@color/ColorBack"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_cadastro_completo_navigation"
+    tools:context="com.aquimercado.aquimercado.login.CadastroNavigation">
+    <requestFocus />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></View>
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/user_comp"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+        </ImageView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></View>
+        <EditText
+            android:hint="Nascimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editNasc" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></View>
+        <EditText
+            android:hint="Telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editTel" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></View>
+        <EditText
+            android:hint="CPF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editCPF" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></View>
+        <EditText
+            android:hint="CEP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editCEP" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></View>
+        <EditText
+            android:hint="Estado"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editEstado" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></View>
+        <EditText
+            android:hint="Cidade"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editCidade" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></View>
+        <EditText
+            android:hint="Rua"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editRua" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></View>
+        <EditText
+            android:hint="Número"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNum" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></View>
+        <Button
+            android:background="@color/ColorFontSPLAShCERTO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:textColor="@color/ColorWhite"
+            android:id="@+id/btRegistrar" />
+    </LinearLayout>
+
+</ScrollView>

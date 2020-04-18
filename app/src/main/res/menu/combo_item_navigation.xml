@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:compat="http://schemas.android.com/tools">
+
+
+
+
+
+    <item
+        android:id="@+id/action_retirada"
+        android:icon="@drawable/retirada_on"
+        android:title="retiradaOn"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_retiradaOff"
+        android:icon="@drawable/retirada_off"
+        android:title="retiradaOff"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_entrega"
+        android:icon="@drawable/entrega_on"
+        android:title="entregaOn"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_entregaOff"
+        android:icon="@drawable/entrega_off"
+        android:title="entregaOff"
+        android:visible="false"
+        app:showAsAction="ifRoom"/>
+
+
+
+
+</menu>

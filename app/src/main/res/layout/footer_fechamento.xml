@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_alignParentBottom="true"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/ColorFontSPLAShCERTO"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/nav_header_vertical_spacing"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="De "
+                android:textColor="@color/ColorWhite"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtFooter2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorWhite"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="  de "
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorWhite"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtDescAF"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:text="  por "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorWhite"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtDescTotAF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ColorWhite"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+</RelativeLayout>

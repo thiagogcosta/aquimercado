@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="103dp"
+        android:layout_height="106dp"
+        android:background="@drawable/icone"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:layout_width="258dp"
+        android:layout_height="51dp"
+        android:background="@drawable/logofim"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="Seu pedido foi cancelado pelo mercado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/bg_screen1"
+        android:id="@+id/textView"
+        android:paddingTop="15dp"
+        android:textSize="18sp"
+        android:elevation="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Você recebeu/retirou seu pedido?"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:text="SIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmapedido"
+        android:background="@color/ColorFont"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="NÃO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/naoconfirmapedido"
+        android:background="@android:color/holo_red_light"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nome_mercadoc"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cod_pedidoc"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/hora_pedidoc"
+        android:gravity="center_horizontal" />
+
+
+
+
+</LinearLayout>

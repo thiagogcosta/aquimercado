@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GRID ITEM DO COMBO-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        card_view:cardBackgroundColor="#E6E6E6"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="8dp">
+
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/img_thumbnail"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY" >
+            </com.android.volley.toolbox.NetworkImageView>
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/nome_combo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.25"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/validade_combo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="right"
+                    android:textColor="@color/ColorFontSPLAShCERTO" />
+                <TextView
+                    android:id="@+id/idCombo"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/nomeCompleto"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/entregaRetirada"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/cod_horaprevista"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tem_frete"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/valor_isento"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/config"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtsobre"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageButton
+            android:visibility="gone"
+            android:layout_gravity="top|right"
+            android:id="@+id/btInfo"
+            android:background="@drawable/btinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aquimercado.aquimercado"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icone"
+        android:label="@string/app_name"
+
+        android:theme="@style/AppTheme">
+
+        <!-- android:hardwareAccelerated="false" -->
+
+
+        <activity
+            android:name=".noWifi"
+            android:configChanges="orientation"
+            android:label="aquiMercado"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            />
+
+        <activity
+            android:name=".login.CadastroNavigation"
+            android:configChanges="orientation"
+            android:label="Cadastrar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".login.LoginNavigation"
+            android:configChanges="orientation"
+            android:label="Conectar"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".login.AlterarNavigation"
+            android:configChanges="orientation"
+            android:label="Alterar Perfil"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".sobre.ContatoNavigation"
+            android:configChanges="orientation"
+            android:label="Contato"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".indicar.IndicarNavigation"
+            android:configChanges="orientation"
+            android:label="Indicar amigo"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".config_oferta.NotificacaoOfertaNavigation"
+            android:configChanges="orientation"
+            android:label="Configurar Notificações"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".mercado.MercadoItemNavigation"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".oferta.OfertaItemNavigation"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".combo.ComboItemNavigation"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".departamento.DepartamentoItemNavigation"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".fechamento.AFechamento"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_afechamento"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".produto.ProdutoItemActivity"
+            android:clickable="true"
+            android:configChanges="orientation"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".fechamento.SplashFechamento"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".login.CadastroCompletoNavigation"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_cadastro_completo_navigation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".pedidos.PedidosNavigation"
+            android:configChanges="orientation"
+            android:label="Meus Pedidos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SplashscreenFIRST"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            >
+        </activity>
+
+        <activity
+            android:name=".pedidos.PedidoIndividualNavigation"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".pedidos.PedidosListNavigation"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".pedidos.FiltrarNavigation"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+        android:name=".notificacao.NotificacaoAntecedencia"
+        android:configChanges="orientation"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" />
+        <!-- Services -->
+        <service
+            android:name=".notificacao.NotificationIntentService"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver android:name=".notificacao.NotificationEventReceiver" android:enabled="true"/>
+
+
+        <service
+            android:name=".notificacao.NotificationIntentServiceOfertas"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver android:name=".notificacao.NotificationEventReceiverOfertas" android:enabled="true"/>
+        <activity
+            android:name=".popup_fechamento.FNavigation_cartaoCERTO"
+            android:configChanges="orientation"
+            android:label="aquiMercado.com"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".popup_fechamento.FNavigation_dinheiroCERTO"
+            android:configChanges="orientation"
+            android:label="aquiMercado.com"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".notificacao.NotificacaoCancelamento"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".notificacao.oferta.OfertaNotificacao"
+            android:configChanges="orientation"
+            android:label= "aquiMercado.com - ofertas"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+            </activity>
+
+        <activity
+            android:name=".premiacao.PremioNavigation"
+            android:configChanges="orientation"
+            android:label= "aquiMercado.com - Prêmios"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".introducao.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ranking.RankingNavigation"
+            android:label="aquiMercado.com - Ranking"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            ></activity>
+        
+    </application>
+
+</manifest>
